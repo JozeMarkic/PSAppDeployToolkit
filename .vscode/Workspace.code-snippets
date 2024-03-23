@@ -1,0 +1,24 @@
+{
+    "Execute-MSI": {
+        "prefix": "Execute",
+        "body": [
+            "Execute-MSI -Action 'Install' -Path '$MSI'"
+        ],
+        "description": "Execute-MSI"
+    },
+    "Remove-File": {
+        "prefix": "Remove",
+        "body": [
+        "Remove-Item -Path 'C:\\Users\\Public\\Desktop\\\\$Shortcut'"
+        ],
+        "description": "Remove-File"
+    },
+    "Remove-MSIApplications": {
+        "prefix": "Remove",
+        "body": [
+            "Remove-MSIApplications -Name '$ApplicationName'"
+        ],
+        "description": "Remove-MSIApplications"
+    }
+
+}
